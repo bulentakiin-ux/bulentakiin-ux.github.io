@@ -2,10 +2,193 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Bülent Akın</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bülent Akın | Bilgi İşlem Uzmanı</title>
+    <style>
+        /* Temel Ayarlar ve Renkler */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Üst Başlık (Header) Alanı */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1a252f);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            margin-top: 10px;
+        }
+
+        /* Ana İçerik Alanı */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Yetenekler (Kart Tasarımı) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .skill-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* İletişim Kutusu */
+        .contact-box {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Alt Bilgi */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: #bdc3c7;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Deep Inc.</h1>
-    <p>GitHub Pages üzerindeki ilk web sitem başarıyla çalışıyor.</p>
+
+    <header>
+        <h1>Bülent Akın</h1>
+        <p>Bilgi İşlem (IT) Uzmanı | Sistem & Network</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="contact-box" style="margin-top: 0; margin-bottom: 3rem; text-align: left;">
+            <h2 style="color: #2c3e50; margin-top:0;">Hakkımda</h2>
+            <p>Merhaba, ben Bülent. Kurumsal bilgi işlem altyapılarının kurulması, yönetilmesi ve güvenliğinin sağlanması konusunda tecrübeliyim. Şirketlerin dijital süreçlerinin kesintisiz çalışması için donanım ve yazılım sorunlarına hızlı, kalıcı çözümler üretiyorum.</p>
+        </div>
+
+        <h2 class="section-title">Uzmanlık Alanlarım</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🖥️</div>
+                <h3>Sistem Yönetimi</h3>
+                <p>Windows Server ve Linux altyapılarının kurulumu, Active Directory yönetimi ve sunucu optimizasyonu.</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Network & Ağ</h3>
+                <p>LAN/WAN mimarisi, Firewall yapılandırması (Fortinet, Sophos) ve ağ güvenliğinin sağlanması.</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">🛠️</div>
+                <h3>Teknik Destek (Helpdesk)</h3>
+                <p>Son kullanıcı donanım/yazılım problemlerinin teşhisi, çözümü ve BT envanter yönetimi.</p>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon">☁️</div>
+                <h3>Yedekleme & Bulut</h3>
+                <p>Microsoft 365 yönetimi, veri yedekleme stratejileri (Veeam) ve felaket kurtarma planlaması.</p>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h2>İletişime Geçin</h2>
+            <p>Projeleriniz, teknik destek talepleriniz veya işbirliği için bana ulaşabilirsiniz.</p>
+            <a href="mailto:ornek@email.com" class="contact-btn">E-Posta Gönder</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bülent Akın. Tüm hakları saklıdır.</p>
+    </footer>
+
 </body>
 </html>
